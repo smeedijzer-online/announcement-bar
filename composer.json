@@ -1,0 +1,14 @@
+{
+  "name": "smeedijzer-online/announcement-bar",
+  "description": "Display a banner at the top of your website",
+  "type": "wordpress-plugin",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "smeedijzer"
+    }
+  ],
+  "require": {
+        "php": ">=7.4"
+  }
+}

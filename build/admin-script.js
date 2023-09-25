@@ -1,0 +1,1 @@
+(()=>{"use strict";let e,t,d;const s=t=>{e.checked?d.classList.add("is-enabled"):d.classList.remove("is-enabled")};document.addEventListener("DOMContentLoaded",(()=>{e=document.querySelector("#enabled"),d=e.closest("tr"),t=e.checked,s(),e.addEventListener("click",(()=>{s()}))}))})();

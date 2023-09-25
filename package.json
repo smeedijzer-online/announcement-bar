@@ -1,0 +1,49 @@
+{
+  "name": "announcement-bar",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Display a banner at the top of your website.",
+  "keywords": [
+    "WordPress",
+    "plugin"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/smeedijzer-online/announcement-bar",
+  "bugs": "https://github.com/smeedijzer-online/announcement-bar/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/smeedijzer-online/announcement-bar.git",
+    "directory": "/"
+  },
+  "author": "Smeedijzer Internet",
+  "authoruri": "https://smeedijzer.net",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9"
+  },
+  "scripts": {
+    "build": "wp-scripts build",
+    "start": "wp-scripts start",
+    "start:hot": "wp-scripts start --hot",
+    "check-engines": "wp-scripts check-engines",
+    "check-licenses": "wp-scripts check-licenses",
+    "format": "wp-scripts format",
+    "lint:css": "wp-scripts lint-style",
+    "lint:js": "wp-scripts lint-js",
+    "lint:md:docs": "wp-scripts lint-md-docs",
+    "lint:pkg-json": "wp-scripts lint-pkg-json",
+    "packages-update": "wp-scripts packages-update",
+    "plugin-zip": "wp-scripts plugin-zip",
+    "test:e2e": "wp-scripts test-e2e",
+    "test:unit": "wp-scripts test-unit-js",
+    "translate": "npm run translate:pot && npm run translate:update",
+    "translate:pot": "wp i18n make-pot . ./languages/announcement-bar.pot --exclude=\"node_modules,vendor,src\"",
+    "translate:update": "wp i18n update-po ./languages/announcement-bar.pot ./languages/*.po",
+    "translate:compile": "npm run translate:mo && npm run translate:js",
+    "translate:js": "wp i18n make-json ./languages --pretty-print",
+    "translate:mo": "wp i18n make-mo ./languages ./languages"
+  },
+  "devDependencies": {
+    "@wordpress/scripts": "^26.13.0"
+  }
+}

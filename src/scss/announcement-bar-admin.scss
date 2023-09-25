@@ -1,0 +1,22 @@
+.admin-announcement-bar-wrap {
+
+	tr {
+		~ tr:not(.is-enabled) {
+			visibility: hidden;
+			opacity: 0;
+			transition: all 0.35s ease-in-out;
+			max-height: 0;
+			display: none;
+		}
+
+		&.is-enabled {
+			~ tr {
+				visibility: visible;
+				opacity: 1;
+				max-height: 999px;
+				transition-delay: 0s;
+				display: table-row;
+			}
+		}
+	}
+}

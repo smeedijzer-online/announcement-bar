@@ -1,0 +1,96 @@
+# Copyright (C) 2023 Smeedijzer Internet
+# This file is distributed under the MIT.
+msgid ""
+msgstr ""
+"Project-Id-Version: Announcement Bar 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/announcement-bar\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2023-09-25T17:21:48+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.8.1\n"
+"X-Domain: announcement-bar\n"
+
+#. Plugin Name of the plugin
+msgid "Announcement Bar"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "announcement-bar"
+msgstr ""
+
+#. Description of the plugin
+msgid "Display a banner at the top of your website."
+msgstr ""
+
+#. Author of the plugin
+msgid "Smeedijzer Internet"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "smeedijzer.net"
+msgstr ""
+
+#: includes/class-announcement.php:282
+msgid "Close notification"
+msgstr ""
+
+#: includes/class-settings.php:29
+#: includes/class-settings.php:43
+msgid "Notification Settings"
+msgstr ""
+
+#: includes/class-settings.php:30
+msgid "Notification"
+msgstr ""
+
+#: includes/class-settings.php:50
+msgid "Save changes"
+msgstr ""
+
+#: includes/class-settings.php:68
+msgid "Notification On/Off"
+msgstr ""
+
+#: includes/class-settings.php:73
+msgid "Text box"
+msgstr ""
+
+#: includes/class-settings.php:88
+msgid "Style type"
+msgstr ""
+
+#: includes/class-settings.php:91
+msgid "Notice"
+msgstr ""
+
+#: includes/class-settings.php:92
+msgid "Success"
+msgstr ""
+
+#: includes/class-settings.php:93
+msgid "Warning"
+msgstr ""
+
+#: includes/class-settings.php:94
+msgid "Danger"
+msgstr ""
+
+#: includes/class-settings.php:100
+msgid "Show icon"
+msgstr ""
+
+#: includes/class-settings.php:194
+msgid "Enter notification below:"
+msgstr ""
+
+#: includes/class-settings.php:199
+msgid "Settings saved."
+msgstr ""
+
+#: includes/class-settings.php:201
+msgid "An error occurred while saving the settings."
+msgstr ""
