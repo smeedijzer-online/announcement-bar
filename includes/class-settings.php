@@ -29,7 +29,7 @@ class Announcement_Settings {
 			public function add_plugin_page() {
 				add_menu_page( __( 'Notification Settings', 'announcement-bar' ),
 							   __( 'Notification', 'announcement-bar' ),
-							   'manage_options',
+							   'edit_pages',
 							   'announcement',
 							   array( $this, 'create_admin_page' ),
 							   'dashicons-megaphone',
@@ -156,14 +156,14 @@ class Announcement_Settings {
 			}
 
 			public function print_settings_field( $args ) {
-				$value = isset( $this->options[ $args['id'] ] ) ? $this->options[ $args['id'] ] : '';
+				$value = $this->options[ $args['id'] ] ?? '';
 
 				switch ( $args['type'] ) {
 					case 'checkbox':
 						printf( '<input type="checkbox" id="%s" name="announcement_plugin_options[%s]" value="1" %s>',
 								$args['id'],
 								$args['id'],
-								$value == 1 ? 'checked' : '' );
+								$value === 1 ? 'checked' : '' );
 						break;
 					case 'textarea':
 						printf( '<textarea id="%s" name="announcement_plugin_options[%s]" rows="5" cols="50">%s</textarea>',
@@ -184,7 +184,7 @@ class Announcement_Settings {
 									$option_value,
 									$args['id'],
 									$option_value,
-									$value == $option_value ? 'checked' : '',
+									$value === $option_value ? 'checked' : '',
 									$option_label );
 						}
 						break;

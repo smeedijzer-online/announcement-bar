@@ -25,7 +25,7 @@ class Announcement_Frontend
     public function __construct()
     {
         // Load the plugin options from the database
-        $this->settings = get_option('announcement_plugin_options');
+        $this->settings = get_option('announcement_plugin_options') ?: [];
 
         // Define default settings.
         $default_settings = array(
@@ -64,7 +64,7 @@ class Announcement_Frontend
 
 
         // Add body class if notification bar is enabled.
-        add_filter('body_class', array( $this, 'add_body_class' ));
+        add_filter('body_class', array($this, 'add_body_class'));
     }
 
     /**
@@ -313,9 +313,9 @@ class Announcement_Frontend
         }
 
         if (true === $this->get_setting('allow_collapse')) {
-            if (! is_customize_preview()) {
+            //if (! is_customize_preview()) {
                 $class[] = 'announcement-bar--hidden';
-            }
+            //}
             $class[] = 'announcement-bar--collapsible';
         }
 
