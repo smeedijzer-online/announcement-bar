@@ -1,13 +1,14 @@
 <?php
 
 class Announcement_Settings {
+
 	// Define a property to hold the plugin options
 	private array $options;
 
 	// Define a constructor to initialize the plugin options
 	public function __construct() {
 		// Load the plugin options from the database
-		$this->options = get_option( 'announcement_plugin_options' );
+		$this->options = get_option( 'announcement_plugin_options' ) ?: [];
 
 		// Register the settings page with WordPress
 		add_action( 'admin_menu', array( $this, 'add_plugin_page' ) );
